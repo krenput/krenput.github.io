@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrenPut Studio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0c1b, #241442, #0f0c1b);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 500px;
+            backdrop-filter: blur(15px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff007f, #00f0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255, 0, 127, 0.3);
+        }
+        p {
+            color: #b3b3cc;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 25px;
+            color: #ffffff;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+        .btn:hover {
+            background: linear-gradient(45deg, #ff007f, #00f0ff);
+            border-color: transparent;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+            transform: translateY(-3px);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666680;
+            font-style: italic;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>KrenPut Studio</h1>
+        <p>Mi smo nezavisni indie studio za razvoj igara. Pravimo projekte sa dušom, dubokom pričom i autorskom muzikom. Inspiraciju pronalazimo u ex-Yu roku i modernoj elektronskoj sceni.</p>
+        
+        <div class="links">
+            <a href="https://itch.io" class="btn" target="_blank">🎮 Posetite naš itch.io</a>
+            <a href="https://x.com" class="btn" target="_blank">📱 Pratite nas na platformi X</a>
+        </div>
+
+        <footer>"Krenuo je dugi put..." Hvala vam na podršci! 🛠️</footer>
+    </div>
+
+</body>
+</html>
